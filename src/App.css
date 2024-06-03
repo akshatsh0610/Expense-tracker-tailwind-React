@@ -1,0 +1,67 @@
+body.dark-mode{
+    @apply bg-gray-900 text-white;
+}
+.dark{
+    @apply bg-gray-900 text-white;
+}
+.light{
+    @apply bg-white text-gray-900;
+}
+.nav.light{
+    @apply bg-slate-50 text-gray-800;
+}
+.nav.dark{
+    @apply bg-gray-800 text-slate-50;
+}
+.stars{
+    @apply text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0)] cursor-pointer hover:text-yellow-300;
+}
+.stars.active{
+    @apply text-yellow-300;
+}
+.card.light,.middle-panel.light{
+    @apply bg-gradient-to-br from-slate-200 to-slate-100 
+}
+.card.dark,.middle-panel.dark{
+    @apply bg-gradient-to-br from-slate-700 to-slate-500 
+}
+.card.light .income{
+    @apply text-blue-700
+}
+.card.light .expense{
+    @apply text-red-500
+}
+.card.dark .income{
+    @apply text-blue-200
+}
+.card.dark .expense{
+    @apply text-red-300
+}
+.btn{
+    @apply text-2xl pl-2 pr-2 pb-2 cursor-pointer border-b-2 pt-4
+}
+.middle-panel.light .btn{
+    @apply border-blue-400
+}
+.middle-panel.dark .btn.active{
+    @apply border-b-4 bg-gradient-to-tr from-slate-700 to-slate-900
+}
+.middle-panel.light .btn.active{
+    @apply border-b-4 bg-gradient-to-tr from-slate-300 to-slate-200 border-blue-400
+}
+.gradient-text.light {
+    background: linear-gradient(90deg,#C40C0C,#850F8D, rgb(0, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-text.dark {
+    background: linear-gradient(90deg,#FF70AB,#C3FF93,#A0DEFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.list.light{
+    @apply bg-slate-50
+}
+.list.dark{
+    @apply bg-slate-700
+}
